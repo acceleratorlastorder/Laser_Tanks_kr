@@ -1,5 +1,5 @@
 {
-	"name": "laser_tanks_updated",
+	"name": "Laser_Tanks_kr",
 	"version": "0.20.0",
 	"title": "Laser Tanks",
 	"author": "acceleratorlastorder",
@@ -7,6 +7,6 @@
 		"base >= 1.1.0",	
 		"(?) Krastorio2 >= 1.2.24"
 	],
-	"description": "Vehicle Laser weapons, Electric Car, Tank, Train.",
+	"description": "Vehicle Laser weapons, Electric Car, Tank, Train, Krastorio 2 compatible fix.",
 	"factorio_version": "1.1"
 }

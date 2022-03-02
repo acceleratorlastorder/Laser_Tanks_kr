@@ -1,7 +1,7 @@
 data:extend({{
     type = "corpse",
     name = "lasertank-big-scorchmark",
-    icon = "__laser_tanks_updated__/graphics/icons/small-scorchmark.png",
+    icon = "__Laser_Tanks_kr__/graphics/icons/small-scorchmark.png",
     icon_size = 32,
     flags = {"placeable-neutral", "not-on-map", "placeable-off-grid"},
     collision_box = {{-1.5, -1.5}, {1.5, 1.5}},
@@ -18,7 +18,7 @@ data:extend({{
       height = 90,
       frame_count = 1,
       direction_count = 1,
-      filename = "__laser_tanks_updated__/graphics/entity/scorchmark/small-scorchmark.png",
+      filename = "__Laser_Tanks_kr__/graphics/entity/scorchmark/small-scorchmark.png",
       variation_count = 3,
 		scale = 2,
 		shift = {0, -0.8},
@@ -32,7 +32,7 @@ data:extend({{
         frame_count = 1,
         direction_count = 1,
         x = 110 * 2,
-        filename = "__laser_tanks_updated__/graphics/entity/scorchmark/small-scorchmark.png",
+        filename = "__Laser_Tanks_kr__/graphics/entity/scorchmark/small-scorchmark.png",
         variation_count = 3,
 		scale = 2,
 		shift = {0, -0.8},
@@ -47,7 +47,7 @@ data:extend({{
         frame_count = 1,
         direction_count = 1,
         x = 110,
-        filename = "__laser_tanks_updated__/graphics/entity/scorchmark/small-scorchmark.png",
+        filename = "__Laser_Tanks_kr__/graphics/entity/scorchmark/small-scorchmark.png",
         variation_count = 3,
 		scale = 2,
 		shift = {0, -0.8},
@@ -65,7 +65,7 @@ data:extend({{
 
 local sprites={
 		{
-        filename = "__laser_tanks_updated__/graphics/1.png",
+        filename = "__Laser_Tanks_kr__/graphics/1.png",
         flags = { "compressed" },
         width = 409,
         height = 343,
@@ -79,7 +79,7 @@ local sprites={
 		scale = 1.2,
       },
 	  {
-        filename = "__laser_tanks_updated__/graphics/2.png",
+        filename = "__Laser_Tanks_kr__/graphics/2.png",
         flags = { "compressed" },
         width = 409,
         height = 396,
@@ -93,7 +93,7 @@ local sprites={
 		scale = 1.2,
       },
 	  {
-        filename = "__laser_tanks_updated__/graphics/3.png",
+        filename = "__Laser_Tanks_kr__/graphics/3.png",
         flags = { "compressed" },
         width = 409,
         height = 330,
@@ -107,7 +107,7 @@ local sprites={
 		scale = 1.2,
       },
 	  {
-        filename = "__laser_tanks_updated__/graphics/4.png",
+        filename = "__Laser_Tanks_kr__/graphics/4.png",
         flags = { "compressed" },
         width = 512,
         height = 339,
@@ -121,7 +121,7 @@ local sprites={
 		scale = 1.1,
       },
 	  {
-        filename = "__laser_tanks_updated__/graphics/5.png",
+        filename = "__Laser_Tanks_kr__/graphics/5.png",
         flags = { "compressed" },
         width = 409,
         height = 366,
@@ -135,7 +135,7 @@ local sprites={
 		scale = 1.2,
       },
 	  {
-        filename = "__laser_tanks_updated__/graphics/6.png",
+        filename = "__Laser_Tanks_kr__/graphics/6.png",
         flags = { "compressed" },
         width = 341,
         height = 287,
@@ -149,7 +149,7 @@ local sprites={
 		scale = 1.2,
       },
 	  {
-        filename = "__laser_tanks_updated__/graphics/7.png",
+        filename = "__Laser_Tanks_kr__/graphics/7.png",
         flags = { "compressed" },
         width = 341,
         height = 313,
@@ -163,7 +163,7 @@ local sprites={
 		scale = 1.3,
       },
 	  {
-        filename = "__laser_tanks_updated__/graphics/8.png",
+        filename = "__Laser_Tanks_kr__/graphics/8.png",
         flags = { "compressed" },
         width = 341,
         height = 310,
@@ -177,7 +177,7 @@ local sprites={
 		scale = 1.4,
       },
 	  {
-        filename = "__laser_tanks_updated__/graphics/9.png",
+        filename = "__Laser_Tanks_kr__/graphics/9.png",
         flags = { "compressed" },
         width = 409,
         height = 338,
@@ -191,7 +191,7 @@ local sprites={
 		scale = 1.5,
       },
 	  {
-        filename = "__laser_tanks_updated__/graphics/10.png",
+        filename = "__Laser_Tanks_kr__/graphics/10.png",
         flags = { "compressed" },
         width = 341,
         height = 260,
@@ -224,7 +224,7 @@ laser_cannon_shell_explosion_2.sound =
       variations =
       {
         {
-          filename = "__laser_tanks_updated__/sound/fight/old/explosion2.ogg",
+          filename = "__Laser_Tanks_kr__/sound/fight/old/explosion2.ogg",
           volume = 1
         }
       }
@@ -241,8 +241,8 @@ if settings.startup["lasertanks-override-color"].value then
 	local tinted_sprites = {}
 	for i, data in pairs(sprites) do
 		table.insert(tinted_sprites,{layers={table.deepcopy(data),table.deepcopy(data)}})
-		tinted_sprites[i].layers[1].filename = "__laser_tanks_updated__/graphics/"..i.."_white.png"
-		tinted_sprites[i].layers[2].filename = "__laser_tanks_updated__/graphics/"..i.."_tint.png"
+		tinted_sprites[i].layers[1].filename = "__Laser_Tanks_kr__/graphics/"..i.."_white.png"
+		tinted_sprites[i].layers[2].filename = "__Laser_Tanks_kr__/graphics/"..i.."_tint.png"
 		tinted_sprites[i].layers[2].tint= {r = r, g = g, b = b, a = 0.85}
 	end
 	laser_cannon_shell_explosion_2.animations = tinted_sprites
@@ -262,7 +262,7 @@ else
 	data:extend({laser_cannon_shell_explosion_3})
 	
 	for i, data in pairs(sprites) do
-		data.filename = "__laser_tanks_updated__/graphics/"..i.."_pink.png"
+		data.filename = "__Laser_Tanks_kr__/graphics/"..i.."_pink.png"
 	end
 	laser_cannon_shell_explosion_2.animations = table.deepcopy(sprites)
 	laser_cannon_shell_explosion_2.light = {intensity = 0.9, size = 25, color = {r=(1+9)/10, g=(0+9)/10, b=(0+9)/10}}
@@ -343,8 +343,8 @@ local projectile1 = {
     },
     animation =
     {
-      --filename = "__laser_tanks_updated__/graphics/entity/laser/laser-to-tint-medium.png",
-      filename = "__laser_tanks_updated__/graphics/dual_laser.png",
+      --filename = "__Laser_Tanks_kr__/graphics/entity/laser/laser-to-tint-medium.png",
+      filename = "__Laser_Tanks_kr__/graphics/dual_laser.png",
 	  scale = 3,
       tint = {r=1.0, g=1.0, b=1.0},
       frame_count = 1,
@@ -357,7 +357,7 @@ local projectile1 = {
 local ammo1 = {
     type = "ammo",
     name = "lasertanks-cannon-ammo-1",
-    icon = "__laser_tanks_updated__/graphics/flash.png",
+    icon = "__Laser_Tanks_kr__/graphics/flash.png",
     icon_size = 32,
     flags = {"hidden"},
     ammo_type =

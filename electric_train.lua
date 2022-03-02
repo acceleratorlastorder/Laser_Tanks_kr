@@ -26,7 +26,7 @@ eloco.color = {r = 0.11, g = 0.96, b = 0.96, a = 0.5}
 eloco.stop_trigger = nil
 eloco.working_sound = {
     sound = {
-        filename = "__laser_tanks_updated__/vehicle-motor.ogg",
+        filename = "__Laser_Tanks_kr__/vehicle-motor.ogg",
         volume = 0.2,
     },
     match_speed_to_activity = true,
@@ -61,7 +61,7 @@ local eloco_recipe = {
 local eloco_item = {
     type = "item-with-entity-data",
     name = "electric-vehicles-electric-locomotive",
-    icon = "__laser_tanks_updated__/graphics/icons/electric-locomotive-2.png",
+    icon = "__Laser_Tanks_kr__/graphics/icons/electric-locomotive-2.png",
     icon_size = 32,
     flags = flags_quickbar,
     subgroup = "transport",

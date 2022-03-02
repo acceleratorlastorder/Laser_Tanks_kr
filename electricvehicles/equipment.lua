@@ -26,7 +26,7 @@ data:extend
     name = "electric-vehicles-lo-voltage-transformer",
     sprite =
     {
-      filename = "__laser_tanks_updated__/graphics/equipment/lo-voltage-transformer.png",
+      filename = "__Laser_Tanks_kr__/graphics/equipment/lo-voltage-transformer.png",
       width = 32,
       height = 64,
       priority = "medium"
@@ -52,7 +52,7 @@ data:extend
     name = "electric-vehicles-hi-voltage-transformer",
     sprite =
     {
-      filename = "__laser_tanks_updated__/graphics/equipment/hi-voltage-transformer.png",
+      filename = "__Laser_Tanks_kr__/graphics/equipment/hi-voltage-transformer.png",
       width = 64,
       height = 64,
       priority = "medium"
@@ -78,7 +78,7 @@ data:extend
     name = "electric-vehicles-regen-brake-controller",
     sprite =
     {
-      filename = "__laser_tanks_updated__/graphics/equipment/regen-brake-controller.png",
+      filename = "__Laser_Tanks_kr__/graphics/equipment/regen-brake-controller.png",
       width = 64,
       height = 64,
       priority = "medium"

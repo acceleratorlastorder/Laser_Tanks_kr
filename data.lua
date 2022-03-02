@@ -16,12 +16,10 @@ data:extend(
   },
  })
 
- log(mods)
-
-if mods["Krastorio2"] then
-	table.insert(data.raw["equipment-grid"]["laser-car-equipment-grid"].equipment_categories,"big-battery-mk2-equipment")
-	log("Krastorio2 has been added to the laser-car-equipment-grid")
-end
+--if mods["Krastorio2"] then
+--	table.insert(data.raw["equipment-grid"]["laser-car-equipment-grid"].equipment_categories,"big-battery-mk2-equipment")
+--	log("Krastorio2 has been added to the laser-car-equipment-grid")
+--end
 
 --if mods["vtk-armor-plating"] then
 --	table.insert(data.raw["equipment-grid"]["laser-car-equipment-grid"].equipment_categories,"vtk-armor-plating")
@@ -37,7 +35,7 @@ local car_item = table.deepcopy(data.raw["item-with-entity-data"].car)
 local car_recipe = table.deepcopy(data.raw.recipe.car)
 
 car.name = "lasercar"
-car.icon = "__laser_tanks_updated__/graphics/car.png"
+car.icon = "__Laser_Tanks_kr__/graphics/car.png"
 car.icon_size = 32
 car.order = "a[basic-clips]-a[pistol]-3"
 car.minable = {mining_time = 1, result = "lasercar"}
@@ -59,7 +57,7 @@ end
 --car.attack_parameters.shell_particle = nil
 --car.attack_parameters.sound =     {
 --      {
---        filename = "__laser_tanks_updated__/test2.ogg",
+--        filename = "__Laser_Tanks_kr__/test2.ogg",
 --        volume = 0.3
 --      },
 --
@@ -75,7 +73,7 @@ table.insert(car_recipe.ingredients,{"plastic-bar", 5})
 -------------
 
 car_item.name = "lasercar"
-car_item.icon = "__laser_tanks_updated__/graphics/car.png"
+car_item.icon = "__Laser_Tanks_kr__/graphics/car.png"
 car_item.icon_size = 32
 car_item.place_result = "lasercar"
 
@@ -88,7 +86,7 @@ local tank_item = table.deepcopy(data.raw["item-with-entity-data"].tank)
 local tank_recipe = table.deepcopy(data.raw.recipe.tank)
 
 tank.name = "lasertank"
-tank.icon = "__laser_tanks_updated__/graphics/tank.png"
+tank.icon = "__Laser_Tanks_kr__/graphics/tank.png"
 tank.icon_size = 32
 tank.order = "a[basic-clips]-a[pistol]-3"
 tank.minable = {mining_time = 1, result = "lasertank"}
@@ -113,7 +111,7 @@ end
 --tank.attack_parameters.shell_particle = nil
 --tank.attack_parameters.sound =     {
 --      {
---        filename = "__laser_tanks_updated__/test2.ogg",
+--        filename = "__Laser_Tanks_kr__/test2.ogg",
 --        volume = 0.3
 --      },
 --
@@ -131,13 +129,13 @@ if not mods["IndustrialRevolution"] then
 end
 -------------
 tank_item.name = "lasertank"
-tank_item.icon = "__laser_tanks_updated__/graphics/tank.png"
+tank_item.icon = "__Laser_Tanks_kr__/graphics/tank.png"
 tank_item.icon_size = 32
 tank_item.place_result = "lasertank"
 
 local vehicle_laser_gun = table.deepcopy(data.raw.gun["tank-machine-gun"])
 vehicle_laser_gun.name = "vehicle-laser-gun"
-vehicle_laser_gun.icon = "__laser_tanks_updated__/graphics/rapid_laser.png"
+vehicle_laser_gun.icon = "__Laser_Tanks_kr__/graphics/rapid_laser.png"
 vehicle_laser_gun.icon_size = 144
 --rifle.attack_parameters.damage_modifier = 0.05--2 --submachinegun = 12.5
 vehicle_laser_gun.attack_parameters.ammo_category = "laser"
@@ -147,14 +145,14 @@ vehicle_laser_gun.attack_parameters.shell_particle = nil
 vehicle_laser_gun.attack_parameters.sound =     
 	{
 		{
-			filename = "__laser_tanks_updated__/test2.ogg",
+			filename = "__Laser_Tanks_kr__/test2.ogg",
 			volume = 0.3
 		},
 	
 	}
 local tank_laser_cannon = table.deepcopy(data.raw.gun["tank-cannon"])
 tank_laser_cannon.name = "tank-laser-cannon"
-tank_laser_cannon.icon = "__laser_tanks_updated__/graphics/laser_cannon.png"
+tank_laser_cannon.icon = "__Laser_Tanks_kr__/graphics/laser_cannon.png"
 tank_laser_cannon.icon_size = 144
 --rifle.attack_parameters.damage_modifier = 0.05--2 --submachinegun = 12.5
 tank_laser_cannon.attack_parameters.ammo_category = "laser"
@@ -164,7 +162,7 @@ tank_laser_cannon.attack_parameters.shell_particle = nil
 tank_laser_cannon.attack_parameters.sound =     
 	{
 		{
-			filename = "__laser_tanks_updated__/cannon.ogg",
+			filename = "__Laser_Tanks_kr__/cannon.ogg",
 			volume = 0.5
 		},
 	
@@ -187,16 +185,16 @@ if settings.startup["lasertanks-override-color"].value then
 	local r =  settings.startup["lasertanks-color-r"].value
 	local g =  settings.startup["lasertanks-color-g"].value
 	local b =  settings.startup["lasertanks-color-b"].value
-	data.raw.item["laserrifle-charger"].icons = {{icon="__laser_tanks_updated__/graphics/charger2.png",tint={r=r, g=g, b=b}},{icon="__laser_tanks_updated__/graphics/charger3.png",tint={r=1.0, g=1.0, b=1.0}}}
+	data.raw.item["laserrifle-charger"].icons = {{icon="__Laser_Tanks_kr__/graphics/charger2.png",tint={r=r, g=g, b=b}},{icon="__Laser_Tanks_kr__/graphics/charger3.png",tint={r=1.0, g=1.0, b=1.0}}}
 	data.raw["battery-equipment"]["laserrifle-charger"].sprite =
     {layers={{
-      filename = "__laser_tanks_updated__/graphics/charger2.png",
+      filename = "__Laser_Tanks_kr__/graphics/charger2.png",
       width = 144,
       height = 144,
       priority = "medium",
 	  tint={r=r, g=g, b=b}
     },{
-      filename = "__laser_tanks_updated__/graphics/charger3.png",
+      filename = "__Laser_Tanks_kr__/graphics/charger3.png",
       width = 144,
       height = 144,
       priority = "medium",

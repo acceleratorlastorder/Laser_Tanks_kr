@@ -25,7 +25,7 @@ local projectile1 = {
     light = {intensity = 0.5, size = 10},
     animation =
     {
-      filename = "__laser_tanks_updated__/graphics/entity/laser/laser-to-tint-medium.png",
+      filename = "__Laser_Tanks_kr__/graphics/entity/laser/laser-to-tint-medium.png",
 	  scale = 1.8,
       tint = {r=1.0, g=1.0, b=1.0},
       frame_count = 1,
@@ -38,7 +38,7 @@ local projectile1 = {
 local ammo1 = {
     type = "ammo",
     name = "lasertanks-ammo-1",
-    icon = "__laser_tanks_updated__/graphics/flash.png",
+    icon = "__Laser_Tanks_kr__/graphics/flash.png",
     icon_size = 32,
     flags = {"hidden"},
 	ammo_type =

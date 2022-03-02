@@ -13,7 +13,7 @@ if not data.raw.technology["laser-rifle-1"] then
 	{
 			type = "technology",
 			name = "laser-rifle-1",
-			icon = "__laser_tanks_updated__/graphics/warning.png",
+			icon = "__Laser_Tanks_kr__/graphics/warning.png",
 			effects =
 			{{
 				type = "unlock-recipe",
@@ -38,7 +38,7 @@ if not data.raw.technology["laser-rifle-1"] then
 		{
 			type = "technology",
 			name = "laser-rifle-2",
-			icon = "__laser_tanks_updated__/graphics/warning.png",
+			icon = "__Laser_Tanks_kr__/graphics/warning.png",
 			effects =
 			{{
 				type = "nothing",
@@ -66,7 +66,7 @@ if not data.raw.technology["laser-rifle-1"] then
 		{
 			type = "technology",
 			name = "laser-rifle-3",
-			icon = "__laser_tanks_updated__/graphics/warning.png",
+			icon = "__Laser_Tanks_kr__/graphics/warning.png",
 			effects =
 			{{
 				type = "nothing",
@@ -106,7 +106,7 @@ if not data.raw.technology["laser-rifle-1"] then
 	{
 		type = "item",
 		name = "laserrifle-charger",
-		icons = {{icon="__laser_tanks_updated__/graphics/charger2.png",tint={r=1.0, g=1.0, b=1.0}},{icon="__laser_tanks_updated__/graphics/charger3.png",tint={r=1.0, g=1.0, b=1.0}}},
+		icons = {{icon="__Laser_Tanks_kr__/graphics/charger2.png",tint={r=1.0, g=1.0, b=1.0}},{icon="__Laser_Tanks_kr__/graphics/charger3.png",tint={r=1.0, g=1.0, b=1.0}}},
 		icon_size = 144,
 		flags = flags_main,
 		placed_as_equipment_result = "laserrifle-charger",
@@ -120,13 +120,13 @@ if not data.raw.technology["laser-rifle-1"] then
 		name = "laserrifle-charger",
 		sprite =
 		{layers={{
-		filename = "__laser_tanks_updated__/graphics/charger2.png",
+		filename = "__Laser_Tanks_kr__/graphics/charger2.png",
 		width = 144,
 		height = 144,
 		priority = "medium",
 		tint={r=1.0, g=1.0, b=1.0}
 		},{
-		filename = "__laser_tanks_updated__/graphics/charger3.png",
+		filename = "__Laser_Tanks_kr__/graphics/charger3.png",
 		width = 144,
 		height = 144,
 		priority = "medium",
@@ -158,11 +158,11 @@ table.insert(data.raw.technology["laser-rifle-1"].effects,      {
         type = "unlock-recipe",
         recipe = "lasercar"
       })
-data.raw.technology["laser-rifle-1"].icon = "__laser_tanks_updated__/graphics/warning.png"
+data.raw.technology["laser-rifle-1"].icon = "__Laser_Tanks_kr__/graphics/warning.png"
 table.insert(data.raw.technology["laser-rifle-2"].effects,      {
         type = "unlock-recipe",
         recipe = "lasertank"
       })
-data.raw.technology["laser-rifle-2"].icon = "__laser_tanks_updated__/graphics/warning.png"
-data.raw.technology["laser-rifle-3"].icon = "__laser_tanks_updated__/graphics/warning.png"
+data.raw.technology["laser-rifle-2"].icon = "__Laser_Tanks_kr__/graphics/warning.png"
+data.raw.technology["laser-rifle-3"].icon = "__Laser_Tanks_kr__/graphics/warning.png"
 end
