@@ -1,6 +1,7 @@
+local use_own_library = false
 if settings.startup["lasertanks-electric-engine"].value and not remote.interfaces["electric-vehicles-lib"] then
 require("Electric-Vehicles-Lib-Reborn.control")
-local use_own_library = true
+use_own_library = true
 end
 
 
@@ -72,8 +73,8 @@ script.on_configuration_changed(function()
 		global.version = 10
 	end
 	if use_own_library then 
-		on_configuration_changed() 
-		rebuild_caches()
+		ev_on_configuration_changed() 
+		ev_rebuild_caches()
 	end
 	if settings.startup["lasertanks-electric-engine"].value then
 	    remote.call("electric-vehicles-lib", "register-transformer", {name = "electric-vehicles-lo-voltage-transformer"})
@@ -275,19 +276,19 @@ if use_own_library then
 	--script.on_init(on_init)
 	--if global.version then -- hmmm.. 
 	script.on_load(function(event)
-		rebuild_caches(event)
+		ev_rebuild_caches(event)
 	end)
 	--end
 	--script.on_configuration_changed(on_configuration_changed)
 	
 	--script.on_event(defines.events.on_built_entity, on_built_entity)
-	script.on_event(defines.events.on_entity_died, on_entity_died)
-	script.on_event(defines.events.on_player_placed_equipment, on_player_placed_equipment)
-	script.on_event(defines.events.on_player_removed_equipment, on_player_removed_equipment)
-	script.on_event(defines.events.on_pre_player_mined_item, on_pre_player_mined_item) -- deprecated?
-	script.on_event(defines.events.on_robot_pre_mined, on_robot_pre_mined)
-	script.on_event(defines.events.on_tick, on_tick)
-	script.on_event(defines.events.on_train_changed_state, on_train_changed_state)
+	script.on_event(defines.events.on_entity_died, ev_on_entity_died)
+	script.on_event(defines.events.on_player_placed_equipment, ev_on_player_placed_equipment)
+	script.on_event(defines.events.on_player_removed_equipment, ev_on_player_removed_equipment)
+	script.on_event(defines.events.on_pre_player_mined_item, ev_on_pre_player_mined_item) -- deprecated?
+	script.on_event(defines.events.on_robot_pre_mined, ev_on_robot_pre_mined)
+	script.on_event(defines.events.on_tick, ev_on_tick)
+	script.on_event(defines.events.on_train_changed_state, ev_on_train_changed_state)
 end
 
 --					if not global.techlevels then
