@@ -1,5 +1,5 @@
 data:extend(
-{  
+{
 	{
     type = "bool-setting",
     name = "lasertanks-override-color",
@@ -7,7 +7,7 @@ data:extend(
     default_value = false,
 	order = "f",
     per_user = false,
-	},   
+	},
     {
     type = "double-setting",
     name = "lasertanks-color-r",
@@ -18,7 +18,7 @@ data:extend(
 	order = "g1",
     per_user = false,
 	},
-	    {
+	{
     type = "double-setting",
     name = "lasertanks-color-g",
     setting_type = "startup",
@@ -28,7 +28,7 @@ data:extend(
 	order = "g2",
     per_user = false,
 	},
-	    {
+	{
     type = "double-setting",
     name = "lasertanks-color-b",
     setting_type = "startup",
@@ -37,8 +37,8 @@ data:extend(
     minimum_value = 0,
 	order = "g3",
     per_user = false,
-	}, 
-{
+	},
+    {
     type = "int-setting",
     name = "lasertanks-explosions",
     setting_type = "startup",
@@ -47,7 +47,7 @@ data:extend(
     minimum_value = 1,
 	order = "h",
     per_user = false,
-	},  
+	},
 	{
     type = "bool-setting",
     name = "lasertanks-aai-tank",
@@ -55,7 +55,7 @@ data:extend(
     default_value = true,
 	order = "i",
     per_user = false,
-	}, 
+	},
 	{
     type = "bool-setting",
     name = "lasertanks-electric-engine",
@@ -71,7 +71,5 @@ data:extend(
     default_value = true,
 	order = "k",
     per_user = false,
-	}, 	
+	},
 })
-
-

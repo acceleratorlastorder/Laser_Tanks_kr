@@ -1,3 +1,7 @@
+0.20.00
+- Made the mod compatible with Krastorio2 vehicles equipement
+- Started translating the mod to French
+
 0.18.15
 - Copied all base game files to protect them from wube.. (factorio 0.18.7 update)
 
