@@ -1,10 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
-Date: 2022-03-07
+Date: 2022-03-08
   Bugfixes:
     - add compatibility with the tesla coil from Krastorio2
 ---------------------------------------------------------------------------------------------------
-Version: 1.00.00
+Version: 1.0.0
 Date: 2022-03-07
   Compatibility:
     - Made the mod compatible with Krastorio2 vehicles equipement
@@ -31,27 +31,27 @@ Version: 0.17.11
   Changes:
     - Updated code to match 0.17.35's change: "Renamed defines.inventory.player_main, player_guns, player_ammo, player_armor, player_vehicle and player_trash to defines.inventory.character_main, character_guns, character_ammo, character_armor, character_vehicle and character_trash"
 ---------------------------------------------------------------------------------------------------
-Version: 0.00.10
+Version: 0.0.10
   Changes:
     - Forgot to add a migration for the recently included electric engines
 ---------------------------------------------------------------------------------------------------
-Version: 0.00.9
+Version: 0.0.9
   Changes:
     - Fix for some mod that messed with the minability
 ---------------------------------------------------------------------------------------------------
-Version: 0.00.8
+Version: 0.0.8
   Changes:
     - Fix for some mod that messed with the guns
 ---------------------------------------------------------------------------------------------------
-Version: 0.00.7
+Version: 0.0.7
   Changes:
     - Fixed a bug with the custom laser colors
 ---------------------------------------------------------------------------------------------------
-Version: 0.00.6
+Version: 0.0.6
   Changes:
     - Forgot to include the laser charger in the technology
 ---------------------------------------------------------------------------------------------------
-Version: 0.00.5
+Version: 0.0.5
   Changes:
     - Electric vehicles lib reborn is not required anymore to get electric vehicles (but is still be compatible)
     - Without Electric vehicles lib reborn, the train now consumes 2.5x as much power (2.5 MW) (since it's an end-game vehicle), increased acceleration by 10% in return
@@ -59,18 +59,18 @@ Version: 0.00.5
     - Fixed Exoskeleton not working in trains
     - Increased max speed of the train by 25%
 ---------------------------------------------------------------------------------------------------
-Version: 0.00.4
+Version: 0.0.4
   Changes:
     - Fixed mining results of the car and tank
     - The tank's weapons will now charge even if it only has 1 charger
 ---------------------------------------------------------------------------------------------------
-Version: 0.00.3
+Version: 0.0.3
   Changes:
     - Projectiles with very dark tint now use a different blend mode to remain visible
     - Added electric train (optional) so you only need electric vehicles lib reborn and don't end up with multiple versions of the electric vehicles (unlocked at laser guns 2)
     - Reduced technology costs of laser guns 3 to 600 (from 1000)
     - Increased Energy per charge to 750 kJ (1500 kJ for the cannon) (from 500/1000)
 ---------------------------------------------------------------------------------------------------
-Version: 0.00.2
+Version: 0.0.2
   Changes:
     - Forgot to remove a dummy i used for testing
