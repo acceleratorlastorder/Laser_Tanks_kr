@@ -1,12 +1,12 @@
 require("env")
 require("utils")
 
--- data.raw.car["lasertank"].guns = {
---     "tank-laser-cannon", "vehicle-laser-gun", "tank-flamethrower"
--- }
--- data.raw.car["lasertank"].minable = {mining_time = 1, result = "lasertank"}
--- data.raw.car["lasercar"].guns = {"vehicle-laser-gun"}
--- data.raw.car["lasercar"].minable = {mining_time = 1, result = "lasercar"}
+data.raw.car["lasertank"].guns = {
+    "tank-laser-cannon", "vehicle-laser-gun", "tank-flamethrower"
+}
+data.raw.car["lasertank"].minable = {mining_time = 1, result = "lasertank"}
+data.raw.car["lasercar"].guns = {"vehicle-laser-gun"}
+data.raw.car["lasercar"].minable = {mining_time = 1, result = "lasercar"}
 
 if data.raw["locomotive"]["electric-vehicles-electric-locomotive"] and
     data.raw.item["electric-vehicles-electric-locomotive"] then
