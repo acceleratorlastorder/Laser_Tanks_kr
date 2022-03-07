@@ -1,4 +1,4 @@
-local USE_DEBUG_MODE = true
+local USE_DEBUG_MODE = false
 
 function debugLog(msg) if USE_DEBUG_MODE then log(msg) end end
 
@@ -14,6 +14,21 @@ function copyEquipementGrid(source, target)
     end
 end
 
-function getEquipementGridList(gridName)
-    return data.raw["equipment-grid"][gridName].equipment_categories
+function getPrototype(type, name)
+    return data.raw[type][name]
+end
+
+function getEquipementGridList(gridName, prototype)
+    prototype = prototype and prototype or getPrototype("equipment-grid", gridName)
+    return prototype.equipment_categories
+end
+
+function addTargetMaskItem(prototype, item)
+    local mask = prototype.trigger_target_mask
+    if not mask then
+        mask = {}
+    end
+
+    prototype.trigger_target_mask = mask
+    table.insert(mask, item)
 end

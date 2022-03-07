@@ -1,6 +1,3 @@
-require("env")
-require("utils")
-
 data.raw.car["lasertank"].guns = {
     "tank-laser-cannon", "vehicle-laser-gun", "tank-flamethrower"
 }
@@ -49,18 +46,3 @@ if mods["IndustrialRevolution"] then
     end
 end
 
-if mods["Krastorio2"] then
-    local car_source = getEquipementGridList("kr-car-grid")
-    local tank_source = getEquipementGridList("kr-tank-grid")
-    local train_source = getEquipementGridList("kr-locomotive-grid")
-
-    local car_target = getEquipementGridList(CAR_EQUIPEMENT_GRID_NAME)
-    local tank_target = getEquipementGridList(TANK_EQUIPEMENT_GRID_NAME)
-    local train_target = getEquipementGridList(TRAIN_EQUIPEMENT_GRID_NAME)
-
-    copyEquipementGrid(car_source, car_target)
-    copyEquipementGrid(tank_source, tank_target)
-    copyEquipementGrid(train_source, train_target)
-
-    debugLog("Krastorio2 equipment can now be used normally in the mod")
-end

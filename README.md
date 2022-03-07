@@ -6,6 +6,6 @@ Which is itself an updated version of the original Laser Tanks mod made by Ownly
 https://mods.factorio.com/mod/laser_tanks
 
 The only thing i did was :
-- making the mod accept krastorio2 equipment
+- making the mod accept Krastorio2 equipment
 - making the changelog compatible with factorio parser
 - translating few bit in French
