@@ -1,58 +1,71 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.20.00
+Version: 1.00.00
 Date: 2022-03-07
   Compatibility:
     - Made the mod compatible with Krastorio2 vehicles equipement
-  Features:
+  Translation:
     - Started translating the mod to French
 ---------------------------------------------------------------------------------------------------
 Version: 0.18.15
   Changes:
     - Copied all base game files to protect them from wube.. (factorio 0.18.7 update)
 ---------------------------------------------------------------------------------------------------
-0.18.14
-- Fixed cannon damaging the tank itself
+Version: 0.18.14
+  Changes:
+    - Fixed cannon damaging the tank itself
 ---------------------------------------------------------------------------------------------------
-0.18.13
-- Fixed vehicles loosing their ability to drive electrically after loading a game
+Version: 0.18.13
+  Changes:
+    - Fixed vehicles loosing their ability to drive electrically after loading a game
 ---------------------------------------------------------------------------------------------------
-0.17.12
-- Added support for Industrial Revolution
+Version: 0.17.12
+  Changes:
+    - Added support for Industrial Revolution
 ---------------------------------------------------------------------------------------------------
-0.17.11
-- Updated code to match 0.17.35's change: "Renamed defines.inventory.player_main, player_guns, player_ammo, player_armor, player_vehicle and player_trash to defines.inventory.character_main, character_guns, character_ammo, character_armor, character_vehicle and character_trash"
+Version: 0.17.11
+  Changes:
+    - Updated code to match 0.17.35's change: "Renamed defines.inventory.player_main, player_guns, player_ammo, player_armor, player_vehicle and player_trash to defines.inventory.character_main, character_guns, character_ammo, character_armor, character_vehicle and character_trash"
 ---------------------------------------------------------------------------------------------------
-0.xx.10
-- Forgot to add a migration for the recently included electric engines
+Version: 0.00.10
+  Changes:
+    - Forgot to add a migration for the recently included electric engines
 ---------------------------------------------------------------------------------------------------
-0.xx.9
-- Fix for some mod that messed with the minability
+Version: 0.00.9
+  Changes:
+    - Fix for some mod that messed with the minability
 ---------------------------------------------------------------------------------------------------
-0.xx.8
-- Fix for some mod that messed with the guns
+Version: 0.00.8
+  Changes:
+    - Fix for some mod that messed with the guns
 ---------------------------------------------------------------------------------------------------
-0.xx.7
-- Fixed a bug with the custom laser colors
+Version: 0.00.7
+  Changes:
+    - Fixed a bug with the custom laser colors
 ---------------------------------------------------------------------------------------------------
-0.xx.6
-- Forgot to include the laser charger in the technology
+Version: 0.00.6
+  Changes:
+    - Forgot to include the laser charger in the technology
 ---------------------------------------------------------------------------------------------------
-0.xx.5
-- Electric vehicles lib reborn is not required anymore to get electric vehicles (but is still be compatible)
-- Without Electric vehicles lib reborn, the train now consumes 2.5x as much power (2.5 MW) (since it's an end-game vehicle), increased acceleration by 10% in return
-- Electric train is now enabled by default
-- Fixed Exoskeleton not working in trains
-- Increased max speed of the train by 25%
+Version: 0.00.5
+  Changes:
+    - Electric vehicles lib reborn is not required anymore to get electric vehicles (but is still be compatible)
+    - Without Electric vehicles lib reborn, the train now consumes 2.5x as much power (2.5 MW) (since it's an end-game vehicle), increased acceleration by 10% in return
+    - Electric train is now enabled by default
+    - Fixed Exoskeleton not working in trains
+    - Increased max speed of the train by 25%
 ---------------------------------------------------------------------------------------------------
-0.xx.4
-- Fixed mining results of the car and tank
-- The tank's weapons will now charge even if it only has 1 charger
+Version: 0.00.4
+  Changes:
+    - Fixed mining results of the car and tank
+    - The tank's weapons will now charge even if it only has 1 charger
 ---------------------------------------------------------------------------------------------------
-0.xx.3
-- Projectiles with very dark tint now use a different blend mode to remain visible
-- Added electric train (optional) so you only need electric vehicles lib reborn and don't end up with multiple versions of the electric vehicles (unlocked at laser guns 2)
-- Reduced technology costs of laser guns 3 to 600 (from 1000)
-- Increased Energy per charge to 750 kJ (1500 kJ for the cannon) (from 500/1000)
+Version: 0.00.3
+  Changes:
+    - Projectiles with very dark tint now use a different blend mode to remain visible
+    - Added electric train (optional) so you only need electric vehicles lib reborn and don't end up with multiple versions of the electric vehicles (unlocked at laser guns 2)
+    - Reduced technology costs of laser guns 3 to 600 (from 1000)
+    - Increased Energy per charge to 750 kJ (1500 kJ for the cannon) (from 500/1000)
 ---------------------------------------------------------------------------------------------------
-0.xx.2
-- Forgot to remove a dummy i used for testing
+Version: 0.00.2
+  Changes:
+    - Forgot to remove a dummy i used for testing
